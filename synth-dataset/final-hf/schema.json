@@ -1,0 +1,12 @@
+{
+  "id": "adhd_001",
+  "prompt": "Ughhh I need to finish my report but maybe I should clean my desk and also I forgot to email Prof??",
+  "completion_structured": "1. Email your professor (5 min). 2. Draft the report introduction (30 min). 3. Take a 5-min break. 4. Organize your desk after finishing report draft.",
+  "completion_simulated": "ok hmm email prof first? oh but desk messy… ugh maybe do report intro quick then desk… hmm brain fried lol",
+  "metadata": {
+    "domain": "task_planning",
+    "noise_level": "high",
+    "style": "adhd",
+    "tags": ["planning", "fragmented_input", "prioritization"]
+  }
+}
