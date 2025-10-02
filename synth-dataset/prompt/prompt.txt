@@ -1,0 +1,54 @@
+You are an assistant that converts a scattered task description into a well-structured JSON plan.
+
+Follow this JSON schema exactly:
+
+{
+  "id": "<unique_id_for_this_scene>",
+  "prompt": "<original user input>", //enhance it like its from an ADHD patient
+  "prompt_summary": "<concise summary of tasks and user's mental state>",
+  "completion_structured": "<step-by-step task plan with priorities and estimated durations>", //keep it to the point
+  "metadata": {
+    "domain": "{domain}",
+    "noise_level": "<low/medium/high>",
+    "style": "adhd", //it is "adhd" every time
+    "tags": {tags}
+  }
+}
+
+Example:
+
+Input: "Ughhh I need to finish my report but maybe I should clean my desk and also I forgot to email Prof??"
+
+Output:
+{
+  "id": "adhd_001",
+  "prompt": "Ughhh I need to finish my report but maybe I should clean my desk and also I forgot to email Prof??",
+  "prompt_summary": "User is overwhelmed with multiple tasks: emailing professor, finishing report, and cleaning desk.",
+  "completion_structured": "1. Email your professor (5 min). 2. Draft the report introduction (30 min). 3. Take a 5-min break. 4. Organize your desk after finishing report draft.",
+  "metadata": {
+    "domain": "task_planning",
+    "noise_level": "high",
+    "style": "adhd",
+    "tags": ["planning", "fragmented_input", "prioritization"]
+  }
+}
+
+Now generate JSON in the same format for this new input:
+
+Input: 
+"{prompt}" //enhance this input prompt like its from an ADHD patient
+"{noise_level}"
+
+Output: FIT THE SCHEMA, DONT ADD ANYTHING EXTRA
+{
+  "id": "{id}",
+  "prompt": "{prompt}", //enhance this input prompt like its from an ADHD patient
+  "prompt_summary": "{prompt_summary}",
+  "completion_structured": "{completion_structured}", //keep it to the point
+  "metadata": {
+    "domain": "{domain}",
+    "noise_level": "{noise_level}",
+    "style": "{style}",
+    "tags": {tags}
+  }
+}
